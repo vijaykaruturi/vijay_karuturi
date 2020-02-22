@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Top Rentals in australia | Airbnb</title>
+    <meta name="author" content="Vijay_karuturi">
+    <meta name="description" content="Top rentals in australia">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <!-- font awesome, bootstrap for modals, google fonts, css buttons -->
+    <script src="https://kit.fontawesome.com/70195ad3d9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/stylesheet.css?v=1.13" type="text/css">
+
+</head>
+
+
+
+<body>
+
+    <div>
+        <header>
+
+            <!--navigation bar and buttons with icon-->
+            <div class="nav">
+                    
+                <ul>
+                       <li><div class="icons">
+                            <i class="fab fa-airbnb"></i>
+                </div></li> 
+                    <li><a href="#">Host a Home</a></li>
+                    <li><a href="#">Host an Experience</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+    </div>
+    </header>
+
+
+
+    <!-- filter buttons on the page
+        <div class="w3-center">
+            <div class="w3-bar">
+                <button class="w3-button w3-round-large w3-teal" id="id1" type="button">Work trip</button>
+                <button class="w3-button w3-round-large w3-teal" type="button">Type of place</button>
+                <button class="w3-button w3-round-large w3-teal" type="button">Price</button>
+                <button class="w3-button w3-round-large w3-teal" type="button">Intsant book</button>
+                <button class="w3-button w3-round-large w3-teal" type="button">More filters</button>
+        </div> -->
+
+
+    <div class="filters">
+        <div>
+
+        </div>
+        <button class="button">Work Trip</button>
+        <button class="button">Villas</button>
+        <button class="button">Apartments</button>
+        <button class="button" type="button" onclick="location.href='booknow.html'" value='click here'>Houses </button>
+        <button class="button">Bungalows</button>
+        <button class="button">More Filters</button>
+
+    </div>
+
+    <!-- marquee to display about results and taxes
+        <div class="marquee">
+            <p><b>Displaying Top Rentals for you. Additional fees apply. Taxes may be added.</b></p>
+        </div>
+    -->
+
+    <!--places to stay header-->
+    <div class="placestostsay">
+        <h2>300+Places to stay </h2>
+    </div>
+
+    <!-- destinations  is the grid  and destinations_x are the grid items (rentals) -->
+    <div class="destinations">
+        <div class="destination_x ">
+
+            <button class="label">Work Trip</button>
+            <img class="images" src="Img/1 (1).jpg" alt="Villa">
+            <div class="content_x">
+                <p>ENTIRE VILLA. 2 BEDS</p>
+                <p> Modern Branyan Guest Villa </p>
+                <strike>
+                    <p>$90 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+
+
+            </div>
+
+            <img src="" alt="">
+
+            <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                Now</button>
+            <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus" type="button">Live
+                Status</button>
+
+        </div>
+
+        <div class="destination_x">
+            <div></div>
+            <button class="label">Apartments</button>
+
+            <img class="images" src="Img/1 (8).jpg" alt="apartment">
+            <div class="content_x">
+                <p>ENTIRE VILLA. 2 BEDS</p>
+                <p> Modern Branyan Guest Villa </p>
+                <strike>
+                    <p>$90 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+
+
+            </div>
+
+            <img src="" alt="">
+
+            <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                Now</button>
+            <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus" type="button">Live
+                Status</button>
+
+
+
+        </div>
+
+        <div class="destination_x">
+            <button class="label">Houses</button>
+            <img class="images" src="Img/1 (3).jpg" alt="House">
+            <div class="content_x">
+                <p>ENTIRE HOUSE · 8 BEDS </p>
+                <p> Spacious Coastal Retreat</p>
+                <strike>
+                    <p>$120 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+                <img src="" alt="">
+                <div>
+                    <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+
+        <div class="destination_x">
+            <button class="label">Bungalow</button>
+            <img class="images" src="Img/1 (4).jpg" alt="Bungalow">
+            <div class="content_x">
+                <p>ENTIRE BUNGALOW · 3 BEDS</p>
+                <p> Point Boston Beach House</p>
+                <strike>
+                    <p>$2000 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$1999 CAD total<p></p>
+                </strong>
+
+                <img src="" alt="">
+                <div>
+                    <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus2" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+
+        <div class="destination_x" id="worktrip">
+            <button class="label">Bungalow</button>
+            <img class="images" src="Img/1 (5).jpg" alt="bungalow2">
+            <div class="content_x">
+                <p>ENTIRE BUNGALOW · 4 BEDS</p>
+                <p> Beach Front Holiday Home</p>
+                <strike>
+                    <p>$100 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$90 CAD total<p></p>
+                </strong>
+                <img src="" alt="">
+
+                <div>
+                    <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+
+        <div class="destination_x">
+            <button class="label">Apartments</button>
+            <img class="images" src="Img/1 (11).jpg" alt="APARTMENT">
+            <div class="content_x">
+                <p>ENTIRE APARTMENT · 2 BEDS </p>
+                <p> The Loft - Crackenback</p>
+                <strike>
+                    <p>$90 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+
+                <img src="" alt="">
+                <div>
+                    <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus2" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+
+        <div class="destination_x">
+            <button class="label">Apartment</button>
+            <img class="images" src="Img/1 (7).jpg" alt="apartment with 4 beds">
+            <div class="content_x">
+                <p>ENTIRE APARTMENT · 4 BEDS</p>
+                <p> The Beach Apartment</p>
+                <strike>
+                    <p>$90 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+                <img src="" alt="">
+                <div>
+                    <button class="btn book_btn" type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+        <div class="destination_x">
+            <button class="label">Villa</button>
+            <img class="images" src="Img/img8.jpg" alt="Guest suite">
+            <div class="content_x">
+                <p>ENTIRE GUEST SUITE · 1 BED </p>
+                <p> Blackheath Sunny Elevated Studio</p>
+                <strike>
+                    <p>$90 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+                <img src="" alt="">
+                <div>
+                    <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus2" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+        <div class="destination_x">
+            <button class="label">Villa</button>
+            <img class="images" src="Img/1 (9).jpg" alt="Cabin">
+            <div class="content_x">
+                <p>ENTIRE CABIN · 3 BEDS </p>
+                <p> Rivers Edge Buxton - a tranquil river hideaway.</p>
+                <strike>
+                    <p>$90 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+                <img src="" alt="">
+                <div>
+                    <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+        <div class="destination_x">
+            <button class="label">Houses</button>
+            <img class="images" src="Img/1 (10).jpg" alt="Guest House">
+            <div class="content_x">
+                <p>ENTIRE GUESTHOUSE · 2 BEDS</p>
+                <p> WOLLONGONG .Escarpment Escape</p>
+                <strike>
+                    <p>$90 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+
+                <img src="" alt="">
+                <div>
+                    <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus2" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+
+        <div class="destination_x">
+            <button class="label">Houses</button>
+            <img class="images" src="Img/1 (12).jpg" alt="">
+            <div class="content_x">
+                <p>ENTIRE HOUSE · 10 BEDS </p>
+                <p> Bay Dream Luxury , 2 bedroom Self Contained Villa.</p>
+                <strike>
+                    <p>$90 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+                <img src="" alt="">
+                <div><button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+
+        <div class="destination_x">
+            <button class="label">Villa</button>
+            <img class="images" src="Img/img12.jpg" alt="villa 2 beds">
+            <div class="content_x">
+                <p>Entire Villa . 2 Beds </p>
+                <p> Modern Branyan Guest Villa - Minutes to Airport</p>
+                <strike>
+                    <p>$90 CAD/night.</p>
+                </strike>
+                <strong>
+                    <p> Price:$100 CAD total<p></p>
+                </strong>
+                <img src="" alt="">
+                <div>
+                    <button class="btn book_btn"  type="button" onclick="location.href='booknow.html'" value='click here'>Book
+                        Now</button>
+                    <button class="btn live_btn" data-toggle="modal" data-target="#Livestatus2" type="button">Live
+                        Status</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="box_info">
+        <div class="box_info1">
+            <img class="images" src="Img/12.jpg" alt="trip info">
+        </div>
+        <div class="box_info2">
+            <p>OVERNIGHT TRIP.MELBOURNE</p>
+            <h3>Surf and Camp on the Great Ocean Road</h3>
+            <p>What we will do:</p>
+            <p>Beginners and intermediate surfers are welcome on this 2-day road trip along the Great Ocean
+                Road,
+                Australia’s most scenic coastline.So you can get the most out of our seaside time, we’ll stop
+                for a two-hour surf lesson at an accredited school. When we’re not surfing, we’ll watch the pro
+                surfers at Bells Beach, see koalas and birds at Kennett River, visit the legendary 12 Apostles,
+                explore caves at Loch Ard Gorge beach, and drive through Otway Rainforest</p>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- footer with copyrights mark and social media icons-->
+    <div class="footer">
+
+        <p style="padding-top: 2rem;font-size: 2rem;;"> Airbnb &copy; All rights reserved</p>
+
+        <div class="icons">
+            <i id="fb" class="fab fa-facebook-f"></i>
+            <i id="inst" class="fab fa-instagram"></i>
+            <i id="twitter" class="fab fa-twitter"></i>
+            <i id="linkedin" class="fab fa-linkedin"></i>
+
+
+        </div>
+    </div>
+
+    <!-- Modal  fo live status to be shown type 1-->
+    <div class="modal fade" id="Livestatus" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Live status of the Rental</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Currently there are 4 villas left</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal  fo live status to be shown type 2-->
+    <div class="modal fade" id="Livestatus2" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Live status of the Rental</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Currently there are 8 apartments left</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+
+
+
+</body>
+
+</html>

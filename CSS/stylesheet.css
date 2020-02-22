@@ -1,0 +1,389 @@
+
+    html{
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color:white;
+      font-family: 'Roboto', sans-serif;
+    
+    }
+    
+    
+    
+    h1,h2,h3,h4,h5,p{
+      font-family: 'Roboto', sans-serif;;
+    }
+    
+    /*Styling for the logo icon*/
+    .airbnb{
+      width:46px;
+      height:46px;
+    }
+    
+    /*Styling for the navigation bar*/
+    .nav{
+      text-align: center;
+    }
+    
+    .nav ul {
+      list-style-type: none;
+      margin-bottom: 1rem;;
+      padding: 0;
+      overflow: hidden;
+      background-color:#009688;
+      border: 0.2em solid burlywood;
+      text-align: center
+    }
+    
+    .nav li {
+      display: inline-block;
+      padding:0.5rem;
+      font-size: 1.6rem;
+      
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    /*styling for on hover of navigation buttons*/
+    .nav li a:hover {
+      background-color:white;
+      color: black;
+      text-decoration: none;
+    }
+    
+    /*styling for filter option buttons*/
+    .filters{
+      background-color: rgb(255, 254, 254);
+      width: 100%;
+      text-align: center;
+    }
+    
+    
+    
+    .button{
+      background-color: #009688; 
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 16px;
+    
+      
+    }
+    
+    /* code for filter buttons on the top of the page */
+    .label{
+      background-color: #71807e; 
+      border: none;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      width:40%;
+    }
+    
+    
+    .options{
+      display: gird;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+      float: left;
+      padding-left: 1rem;
+      background-color: #f1f1f1;
+    }
+    
+    
+    /*Styling for places to stay heading*/
+    .placestostsay{
+      text-align: center;
+      width: 100%;
+    
+    }
+    
+    .func_button{
+    margin:1rem;
+    }
+    
+    /*
+    .corner-ribbon{
+      width: 200px;
+      background: #e43;
+      position: absolute;
+      top: 25px;
+      left: -50px;
+      text-align: center;
+      line-height: 50px;
+      letter-spacing: 1px;
+      color: #f0f0f0;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+    .corner-ribbon.bottom-left{
+      top: auto;
+      bottom: 25px;
+      left: -50px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    .corner-ribbon.red{background: #e43;}
+    .corner-ribbon.sticky{
+      position: fixed;
+    }
+    .corner-ribbon.shadow{
+      box-shadow: 0 0 3px rgba(0,0,0,.3);
+    }
+    .marquee {
+      margin: 0 0 0 4 rem;
+      width: 100%;
+      line-height: 30px;
+      background-color:#c7f1ed;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      margin: 1rem 0;
+    }
+    .marquee p {
+      display: inline-block;
+      background-color: #c7f1ed;
+      padding-left:  100%;
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+    }
+    */
+    
+    
+    /*styling for the rental grid template and grid elements starts from here*/
+    .container{
+      margin: 0 4rem;
+    }
+    
+    .destinations{
+        
+        background-color: #f1f1f1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 0.2rem;
+        grid-row-gap: 0.2rem;
+        padding: 0 80px;
+        border-radius: 8%;
+          
+    }
+    
+    
+    
+    .destination_x{
+      background-color:rgb(252, 252, 252);
+      margin: 2rem 1rem 1rem 1rem;
+      
+      box-shadow:0 0 8px 8px rgba(56, 121, 241, 0.1);
+      border: 0.06em solid burlywood;
+      text-align: center;
+    } 
+    
+    .content_x{
+      padding:0.6rem;
+      margin: 1rem;
+    }
+    /*Styling for the live status and book now buttons starts from  here*/
+    .btn {
+      background-color: #4CAF50; /* Green */
+      border: 0.08em solid burlywood !important;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 18px;
+    }
+    
+    
+    .live_btn {
+      background-color: #009688; 
+      color: white; 
+      border: 2px solid rgb(35, 201, 76);
+    }
+    
+    .live_btn:hover {
+      background-color: #f44336;
+      color: black;
+    }
+    
+    .book_btn {
+      background-color:#009688; 
+      color: white; 
+      border: 2px solid rgb(35, 201, 76);
+    }
+    
+    .book_btn:hover {
+      background-color: #f44336;
+      color: black;
+    }
+     
+    
+    /*styling for box under the gird*/
+    .box_info{
+    display: grid;
+    grid-template-columns:4fr 4fr;
+    
+    margin: 2rem;
+    border: 0.1em solid #a0f1e9;
+      box-shadow:0 0 5px 5px rgba(78, 129, 224, 0.1)
+    
+    }
+    .box_info3{
+      display: grid;
+      grid-template-columns:5fr 5fr;
+      
+      margin: 2rem;
+      border: 0.1em solid #a0f1e9;
+        box-shadow:0 0 4px 4px rgba(78, 129, 224, 0.1)
+      
+      }
+    
+    
+    
+    /*styling for the footer*/
+    .footer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: #009688;
+      color: white;
+      text-align: center;
+      padding-top: 1.5 rem;
+          
+      }
+    
+    /*styling for the icons*/
+    .icons{
+      font-size: 4rem;
+      padding: 0.5rem;
+      margin-left: 40%;
+    }
+    
+    
+    
+    
+    
+    .images{
+        /*background-image: cover;*/
+        max-width: 94%;
+        border-radius: 20px;
+        padding-top: 1rem;
+     
+    }
+    
+    /* Add a hover effect (blue shadow) */
+    img:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 14, 19, 0.5);
+      transform: scale(1.05);
+    }
+    
+    .box_info2{
+      margin-top:15%;
+    }
+      
+    /*MEDIA QUERIES */
+    
+    /*for tablet*/
+    
+    @media screen and (max-width:900px) and (min-width:501px){
+        .destinations{
+            grid-template-columns: 1fr 1fr;
+        }
+       
+    }
+    
+    /*for desktop*/
+    @media screen and (max-width:1128px) and (min-width:901px){
+        .destinations{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    
+        
+    }
+    /*
+    @media screen and (max-width:500px) {
+        .destinations{
+            grid-template-columns: 1fr;
+        }
+    }
+    */
+    
+    /*formobile*/
+    @media screen and (max-width:742px){
+      .destinations {
+        grid-template-columns: 1fr;
+      }
+    
+      .box_info{
+        grid-template-columns: 4fr;
+        padding: 1rem;
+      }
+    
+      .footer{
+        grid-template-columns: 4fr;
+      }
+      
+      .icons{
+         font-size: 2rem;
+         padding-right: 40%;
+      }
+    
+      .ul{
+        position: static;
+        display: none;
+      }
+    
+      .li{
+        margin-bottom: 1px;
+      }
+    
+      ul li, li a{
+        width: 100%;
+      }
+    
+      .logo{
+        padding-left: 20%;
+      }
+    
+      .filters{
+        display: none;
+      }
+    }
+        
+      
+      .row {
+        display: flex;
+      }
+      
+      .column {
+        flex: 33.33%;
+        padding: 5px;
+      }
+      @media screen and (max-width: 500px) {
+        .column {
+          width: 100%;
+        }
+    }
